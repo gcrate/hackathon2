@@ -106,7 +106,7 @@ $.getJSON('http://192.168.4.1:8081/move?droneId=MyDroneId&direction=forward&step
 **Endpoint:** /land?droneId=[droneId]  
 **Method:** GET  
 **Parameters:**  
-droneId - _The ID of your drone_
+droneId - _The ID of your drone_  
 direction - _How you want the drone to move. Valid values [up, down, forward, backward, right, left, turnRight, turnLeft]_  
 
 **Example Code:**
