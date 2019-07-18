@@ -6,12 +6,14 @@
 1. Connect to the raspberry Pi controller by WiFi
   * **SSID**: DronePiFi
   * **Password**: Drones123
-2. If using your work laptop, disable proxy settings
-  1. Click windows 'Start' button
-  2. Type `Internet Options`, and select it from the menu
-  3. On the Connections tab, click the 'LAN settings' button
-  4. Uncheck all the checkboxes and click OK
-  5. Click OK on the Internet Options window
+  * Note: Once connected to the WiFi you won't have internet access anymore, and will need to switch to another WiFi if you need to download anything
+2. If using your work laptop, disable proxy settings  
+  a. Click windows 'Start' button  
+  b. Type `Internet Options`, and select it from the menu  
+  c. On the Connections tab, click the 'LAN settings' button  
+  d. Uncheck all the checkboxes and click OK  
+  e. Click OK on the Internet Options window  
+  
 
 ### Before you Start
 * **Note the DroneId of your drone.** It's written on your drone's box. You'll need to pass it to all the API calls (So you're controlling the right drone!)
