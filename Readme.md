@@ -5,7 +5,7 @@
 ### WiFi Setup
 1. Connect to the raspberry Pi controller by WiFi
   * **SSID**: DronePiFi
-  * **Password**: Drone123
+  * **Password**: Drones123
 2. If using your work laptop, disable proxy settings
   1. Click windows 'Start' button
   2. Type `Internet Options`, and select it from the menu
