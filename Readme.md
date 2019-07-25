@@ -103,7 +103,7 @@ $.getJSON('http://192.168.4.1:8081/move?droneId=MyDroneId&direction=forward&step
   });
 ```
 #### - Flip
-**Endpoint:** /land?droneId=[droneId]  
+**Endpoint:** /flip?droneId=[droneId]&direction=[direction]  
 **Method:** GET  
 **Parameters:**  
 droneId - _The ID of your drone_  
@@ -111,7 +111,7 @@ direction - _How you want the drone to move. Valid values [up, down, forward, ba
 
 **Example Code:**
 ```javascript
-$.getJSON('http://192.168.4.1:8081/move?droneId=MyDroneId&direction=forward&steps=20&speed=20')
+$.getJSON('http://192.168.4.1:8081/flip?droneId=MyDroneId&direction=forward')
   .done(function() {
     //The connection was successful! We can do something here
   })
