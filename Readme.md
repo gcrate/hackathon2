@@ -55,6 +55,7 @@ $.getJSON('http://192.168.4.1:8081/connect?droneId=MyDroneId')
   });
 ```
 #### - Take Off
+_If your drone has a low battery, this command will return successfully but the drone will not actually move_   
 **Endpoint:** /takeoff?droneId=[droneId]  
 **Method:** GET  
 **Parameters:**  
