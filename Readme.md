@@ -18,7 +18,7 @@
 ### Before you Start
 * **Note the DroneId of your drone.** It's written on your drone's box. You'll need to pass it to all the API calls (So you're controlling the right drone!)
 * The API is hosted by the Raspberry Pi at http://192.168.4.1:8081/ All api calls should be made against this address.
-* All the code examples below use JQuery. You don't have to use JQuery- any way to make HTTP GET requests will do. If you do decide to use JQuery you'll need to include it the library. You can download from https://jquery.com/download/, save it in the same directory as your HTML file and then include it with the following:
+* All the code examples below use JQuery. You don't have to use JQuery- any way to make HTTP GET requests will do. If you do decide to use JQuery you'll need to include it the library. You can download from [here](jquery-3.4.1.min.js), save it in the same directory as your HTML file and then include it with the following:
 ```HTML
 <script src="jquery-3.4.1.min.js"></script>
 ```
@@ -35,6 +35,8 @@
     "success": true
   }
 ```
+
+If you need help getting started, you can use the [start HTML](starter.html) file for your controller
 
 ## API  
 #### - Connect
