@@ -36,7 +36,7 @@
   }
 ```
 
-If you need help getting started, you can use the [start HTML](starter.html) file for your controller
+If you need help getting started, you can use the [starter HTML](starter.html) file for your controller
 
 ## API  
 #### - Connect
