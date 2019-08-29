@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <script src="jquery-3.4.1.min.js"></script>
+        <script>
+
+            const DRONE_ID='YourDroneIdHere' //Add your drone ID here!
+            const SERVICE_URL = 'http://192.168.4.1:8081/';
+            var busy = false;
+            
+            function setBusy() {
+                busy = true;
+                $(".button").addClass('disabled');
+            }
+
+            function setReady() {
+                busy = false;
+                $(".button").removeClass('disabled');
+            }
+
+            function connect() {
+                setBusy();
+                $.getJSON(SERVICE_URL + 'connect?droneId=' + DRONE_ID)
+                    .done(function() {
+                        setReady();
+                        console.log('connected');
+
+                        //enable the buttons;
+                     })
+                     .fail(function(err) {
+                        setReady();
+                        console.log(err);
+                        alert('connection failed, refresh');
+                    });
+            }
+
+            function takeOff() {
+                if(busy) {
+                    console.log('Busy!');
+                    return; //
+                }
+                setBusy();
+                $.getJSON(SERVICE_URL + 'takeoff?droneId=' + DRONE_ID)
+                    .done(function() {
+                        setReady();
+                        console.log('connected');
+                     })
+                     .fail(function(err) {
+                        setReady();
+                        console.log(err);
+                        alert('connection failed, refresh');
+                    });
+            }
+
+            
+        </script>
+        <style>
+            .button {
+                background-color: #4CAF50;
+                border: none;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+            }
+
+            .disabled {
+                background-color: grey !important;
+            }
+        </style>
+    </head>
+    <body onload="connect()">
+        <div class="button" onclick="takeOff()">Take Off</div>
+    </body>
+</html>
